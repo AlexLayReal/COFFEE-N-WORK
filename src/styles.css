@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+    
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body { margin: 0; padding: 0; width: 100%;  
+  font-family: Satoshi, Roboto, "Helvetica Neue", sans-serif; 
+  background-image: url(assets/BckBalls_frame.svg); background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; background-color: #131126  }
+
+
+.panelFondo {
+    width: 80%;
+    opacity: 0.60;
+    background: linear-gradient(180deg, rgba(52, 160, 164, 0.80) 0%, rgba(52, 160, 164, 0.30) 83%, rgba(52, 160, 164, 0) 86%);
+    border: 5px #D9ED92 solid;
+    border-bottom: 0px;
+    backdrop-filter: blur(40px, 20px);
+    position: absolute;
+    height: 885%;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+

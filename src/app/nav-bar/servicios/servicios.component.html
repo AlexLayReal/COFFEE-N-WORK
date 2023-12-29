@@ -1,0 +1,152 @@
+<!--<div
+  style="
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-family: Satoshi;
+    font-weight: 900;
+    word-wrap: break-word;
+  "
+>
+  SERVICIOS
+</div> -->
+<div class="enlaceNav" id="serviciosLink">111</div>
+<div class="servTitle" >SERVICIOS</div>
+
+<div class="salaV">
+  SALA COWORKING
+
+  <div class="vanilla">Acceso <i>VANILLA</i></div>
+</div>
+
+<div class="salaP">
+  SALA COWORKING
+
+  <div class="premium">Acceso <i>PREMIUM</i></div>
+</div>
+
+<div class="salaServicios" >
+
+
+  
+  <div class="servVa">
+    <ul>
+      <li>Conexión 5G de alta velocidad</li>
+      <li>Periféricos disponibles</li>
+      <li>Uso ilimitado de ordenadores de alta gama</li>
+      <li>Dispositivos de almacenamiento (500GB, 1TB, 2TB) sujeto a fianza</li>
+      <li>15% descuento en cafetería</li>
+      <li>Bebida ilimitada en el surtidor</li>
+      <li>Impresión sin limites (B&N/Color)</li>
+    </ul>
+  </div>
+
+  <div class="servPre">
+    <ul>
+      <li>Conexión 5G de alta velocidad</li>
+      <li>Periféricos disponibles</li>
+      <li>Uso ilimitado de ordenadores de alta gama</li>
+      <li>Dispositivos de almacenamiento (500GB, 1TB, 2TB) sujeto a fianza</li>
+      <li>15% descuento en cafetería</li>
+      <li>Bebida ilimitada en el surtidor</li>
+      <li>Impresión sin limites (B&N/Color)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="checkV">
+  <img src="assets\check.svg" />
+  <img src="assets\check.svg" />
+  <img src="assets\nope.svg" />
+  <img src="assets\check.svg" />
+  <br />
+  <img src="assets\nope.svg" />
+  <img src="assets\nope.svg" />
+  <img src="assets\nope.svg" />
+</div>
+
+<div class="checkP">
+  <img src="assets\check.svg" />
+  <img src="assets\check.svg" />
+  <img src="assets\check.svg" />
+  <img src="assets\check.svg" />
+  <br />
+  <img src="assets\check.svg" />
+  <img src="assets\check.svg" />
+  <img src="assets\check.svg" />
+</div>
+
+<div class="salaImg">
+ 
+    <img class="itemImg3" src="assets\Images\Sala\image3ss.jpg" />
+
+    <img class="itemImg4" src="assets\Images\Sala\image4ss.jpg" />
+
+    <img class="itemImg1" src="assets\Images\Sala\image1ss.jpg" />
+
+</div>
+
+
+<div class="tabs">
+
+  <div class="index">
+
+    <div (click)="tab=1" (keyup.enter)="tab=1"
+      [ngClass]="{active: tab===1}" tabindex="0" role="tab">
+      HABITACIONES Box Rooms
+    </div>
+
+    <div (click)="tab=2"  (keyup.enter)="tab=2" 
+      [ngClass]="{active: tab===2}" tabindex="0" role="tab">
+      HABITACIONES Space Rooms
+    </div>
+
+  </div>
+
+  <div class="contents">
+    <div *ngIf="tab === 1"> Las habitaciones individuales, cada una con su propia temática, ofrecen un ambiente acogedor.<br/><br/>Equipadas con todo lo necesario para el ocio y el trabajo, incluyendo un escritorio con un potente ordenador, conexión 5G, una silla ergonómica y una cama confortable. Además, cuentan con acceso a las instalaciones de ducha.<br/><br/>¡Disfruta de la comodidad y la privacidad en estas habitaciones diseñadas pensando en ti! </div>
+    
+    <span *ngIf="tab === 1" class="boxPack">
+
+      <img class="boxImg1" src="assets\Images\BoxRoom\40e831d7-a1a5-49d8-88e0-e354446dcb96.jfif" />
+      <img class="boxImg2" src="assets\Images\BoxRoom\036af427-0f67-4fce-8334-0171e7e8705a.jfif" />
+      <img class="boxImg3" src="assets\Images\BoxRoom\7801c10e-c475-4ebd-900c-7335bd356d15.jfif" />
+
+    </span>
+
+
+    <div *ngIf="tab === 2"> Habitaciones más amplias donde disfrutar de la esencia de las Box Rooms pero disponiendo de todos los servicios necesarios en un espacio privado.<br/><br/>Sumado a todo lo que una Box Rooms ofrece, contarás con baño privado, acceso gratuito a una colección de videojuegos y Manga, además de equipo para streaming (luces led, micrófono y cascos con cancelación de ruido).</div>
+    
+    <span *ngIf="tab === 2" class="spacePack">
+
+      <img class="spaceImg1" src="assets\Images\SpaceRoom\4214f2ca-f978-464a-a25b-d4129100ec43.jfif" />
+      <img class="spaceImg2" src="assets\Images\SpaceRoom\03db3760-be43-426e-8032-e0f877658faa.jfif" />
+      <img class="spaceImg3" src="assets\Images\SpaceRoom\61def755-ee37-423f-85e1-c40a85f31db6.jfif" />
+
+    </span>
+
+  </div>
+</div>
+
+<div class="extrasTab">
+
+  <div class="extrasTitle">EXTRAS Y OTROS SERVICIOS</div>
+
+  <img class="extrasPic" src="assets\Images\78356433-4126-484e-886b-480118a71be4.jfif" />
+  
+  <ul class="extrasContent">
+    <li>Instalación de duchas y aseo.</li>
+    <li>Baños compartidos por planta.</li>
+    <li>Recepción 24H.</li>
+    <li>Servicio de cafetería. *</li>
+    <li>Extras:</li>
+    <ul>
+      <li>Setup de Streaming.</li>
+      <li>Acceso a colección de videojuegos y manga.</li>
+      <li>Consolas y periféricos a elección.</li>
+    </ul>
+  </ul>
+  <div class="anotation">* Carta disponible en habitación</div>
+</div>

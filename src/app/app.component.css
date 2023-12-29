@@ -1,0 +1,224 @@
+
+@import url(https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Audiowide&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Spice&family=Lilita+One&display=swap);
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+
+}
+
+/*.BackBalls {
+  width: 100%;
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+
+
+nav {
+  position: fixed;
+  width: 90%;
+  height: 10%;
+  top: 0%;
+  left: 50%;
+  padding: 20px 80px 20px 80px;
+  transform: translate(-50%, 0);
+  z-index: 111;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: satoshi;
+
+  background: linear-gradient(180deg, #184e77 0%, #1a759f 100%);
+  box-shadow: 0px -2px 20px 17px rgba(0, 0, 0, 0.1);
+  display: flex;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+ol li {
+
+  list-style: none;
+  margin: 0 30px;
+  
+}
+
+ol {
+  display: flex;
+  position: relative;
+  margin: 5px 0;
+}
+
+ol li a {
+
+  word-wrap: break-word;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 1px 0px #184E77, 2px -15px 7px rgba(206,89,55,0);
+  font-family: satoshi;
+}
+
+
+.logo1 {
+  position: fixed;
+  font-weight: bold;
+  top: 1%;
+  padding: 4px 80px 20px 80px;
+  z-index: 113;
+  margin-left: 39%;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Lilita One', sans-serif;
+  color: white;
+  text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 1px #1A759F;
+  line-height: 160%;
+  letter-spacing: 6px;
+ }
+
+ .logo2 {
+  position: fixed;
+  font-weight: bold;
+  top: 5%;
+  padding: 5px 80px 20px 80px;
+  z-index: 113;
+  margin-left: 39%;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'Lilita One', sans-serif;
+  color: white;
+  text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.7);
+  -webkit-text-stroke: 1px #1A759F;
+  line-height: 160%;
+  letter-spacing: 4.6px;
+ }
+
+.logoFull {
+  background: linear-gradient(180deg, #52B69A 0%, #99D98C 100%);
+  padding: 20px 90px 50px 80px;
+  height: 12%;
+  width: 50px;
+  position: relative;
+  z-index: 112;
+  top: 0%;
+  margin-left: 43.3%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px
+}
+
+.rightBar {
+  padding-left: 15%;
+  font-family: satoshi;
+}
+
+.leftBar {
+  padding-right: 15%;
+  font-family: satoshi;
+}
+
+.textPresent {
+  z-index: 110;
+
+  background: linear-gradient(135deg, #52B69A 20%, #1E6091 30%, #d9ed9292 40%);
+  -webkit-background-clip: text;
+
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+  color: white;
+  position: absolute;
+  width: 86%;
+  top: 15%;
+  left: 55%;
+  padding: 20px 80px 20px 80px;
+  transform: translate(-50%, 0);
+  box-shadow: #184e77;
+  stroke-width: 2px;
+  -webkit-text-stroke: 6px transparent;
+  font-size: 60px;
+  font-weight: 1000;
+  font-family: satoshi;
+  line-height: 100px;
+  letter-spacing: 6.72px;
+  word-wrap: break-word;
+}
+
+.textDesc {
+  z-index: 110;
+  color: white;
+  position: absolute;
+  width: 86%;
+  top: 59%;
+  left: 55%;
+  padding: 20px 90px 20px 80px;
+  transform: translate(-50%, 0);
+  text-shadow: #184E77 2px 2px 1px, 1px 1px 1px rgba(30,96,145,0.4);
+  stroke-width: 2px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: satoshi;
+  line-height: 50px;
+  letter-spacing: 2.80px;
+  word-wrap: break-word;
+  display: block;
+}
+
+.destaca2 {
+  font-family: 'Audiowide', sans-serif;
+  font-style: oblique;
+}
+
+.fotoInicio {
+  max-width: 30%;
+  border-radius: 0px 50px 0px 50px;
+  border: 5px #D9ED92 solid;
+  -webkit-box-shadow: 10px 0px 13px -7px #000000, 13px 11px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 10px 0px 13px -7px #0f2e46, 13px 11px 15px 5px rgba(0,0,0,0);
+  position: absolute;
+  top: 21%;
+  left: 66%;
+  transform: translate(-50%, 0);
+  z-index: 110;
+}
+
+/*.panelFondo {
+  width: 80%;
+  opacity: 0.60;
+  background: linear-gradient(180deg, rgba(52, 160, 164, 0.80) 0%, rgba(52, 160, 164, 0.30) 93%, rgba(52, 160, 164, 0) 100%);
+  border: 5px #D9ED92 solid;
+  backdrop-filter: blur(40px);
+  position: absolute;
+  height: 5981px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}*/
+
+.coGaHo {
+  display: block;
+  color: white;
+  font-size: 19px;
+  font-style: oblique;
+  font-family: Satoshi;
+  padding: 2% 0% 1% 0%;
+  letter-spacing: 23px;
+  word-wrap: break-word;
+  text-align: center;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 21px 19px 2px rgba(206,89,55,0);
+
+  width: 80%;
+  height: 12%;
+  background: linear-gradient(135deg, #34A0A4 0%, #1A759F 84%);
+  box-shadow: 11px 13px 11px -4px rgba(0, 0, 0, 0.10);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 5px #D9ED92 solid;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 110;
+}

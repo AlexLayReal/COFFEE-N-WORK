@@ -1,0 +1,146 @@
+<div class="reservasTitle">RESERVAS</div>
+
+<div class="enlaceNav" id="reservasLink"></div>
+<div class="formContain">
+<div class="bg-contact100">
+  <div class="wrap-contact100">
+    <form class="contact100-form validate-form" (ngSubmit)="onSubmit()" #coffeeForm="ngForm" novalidate>
+      <div class="wrap-input100 validate-input">
+        <input class="input100" type="text" name="name" placeholder="Nombre" [(ngModel)]="coffeeUserModel.name"/>
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <input class="input100" type="text" name="email" placeholder="Email" [(ngModel)]="coffeeUserModel.email"/>
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <input
+          class="input100"
+          type="tel"
+          name="phone"
+          required
+          placeholder="Nº telefono"
+          [(ngModel)]="coffeeUserModel.phone"
+        />
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </span>
+      </div>
+
+      <div class="wrap-input100 validate-input" id="div_roomOptions">
+        <label
+          class="contact100-form-title"
+          for="roomOptions"
+          style="padding: 5%; padding-bottom: 8%; text-align: center"
+        >
+          Elige un tipo de ROOM
+        </label>
+        <div class="contact100-form-options">
+          <label class="radio-inline">
+            <input
+              name="roomOptions"
+              type="radio"
+              value="BOX-room"
+              [checked]="roomOption === 'BOX-room'"
+              (click)="retoggleRoomOption('BOX-room')"
+              [(ngModel)]="coffeeUserModel.roomOptions"
+            />
+            BOX-room
+          </label>
+          <label class="radio-inline">
+            <input
+              name="roomOptions"
+              type="radio"
+              value="SPACE-room"
+              [checked]="roomOption === 'SPACE-room'"
+              (click)="retoggleRoomOption('SPACE-room')"
+              [(ngModel)]="coffeeUserModel.roomOptions"
+            />
+            SPACE-room
+          </label>
+        </div>
+      </div>
+
+      <div
+        class="wrap-input100 validate-input"
+        data-validate="Fecha de entrada es requerida"
+        *ngIf="roomOption"
+      >
+        <span class="contact100-form-title"> Fecha de Entrada </span>
+        <input
+          class="input100"
+          type="date"
+          name="date"
+          placeholder="MM/DD/YYY"
+          [(ngModel)]="coffeeUserModel.dateEntra"
+        />
+        <label class="control-label" for="date"></label>
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+        </span>
+      </div>
+
+      <div class="wrap-input100 validate-input" *ngIf="roomOption">
+        <span class="contact100-form-title"> Fecha de Salida </span>
+        <input
+          class="input100"
+          type="date"
+          name="date"
+          placeholder="MM/DD/YYY"
+          [(ngModel)]="coffeeUserModel.dateSali"
+        />
+        <label class="control-label" for="date"></label>
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+        </span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <span
+          class="contact100-form-title"
+          style="padding: 5%; padding-top: 6%; text-align: center"
+        >
+          Envianos tus dudas o peticiones
+        </span>
+        <input
+          class="input100"
+          type="text"
+          name="subject"
+          placeholder="Asunto"
+          [(ngModel)]="coffeeUserModel.subject"
+        />
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </span>
+      </div>
+
+      <div class="wrap-input100 validate-input">
+        <textarea
+          class="input100"
+          name="message"
+          placeholder="Never gonna give you up, never gonna let you down, never gonna run around and desert you. Never gonna make you cry, never gonna say goodbye, never gonna tell a lie and hurt you..."
+          style="resize: none"
+          [(ngModel)]="coffeeUserModel.message"
+        ></textarea>
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="container-contact100-form-btn">
+        <button type="submit" id="submitButton" class="contact100-form-btn">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>

@@ -1,0 +1,207 @@
+
+.pricesTitle {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-family: Satoshi;
+    font-weight: 900;
+    word-wrap: break-word;
+    padding-top: 1%;
+    z-index: 110;
+
+    top: 416%;
+
+    line-height: 100px;
+    letter-spacing: 6.72px;
+    word-wrap: break-word;
+
+    text-shadow: 4px 2px 0 #34A0A4, 2px 2px 2px rgba(206, 89, 55, 0);
+}
+
+.enlaceNav {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    visibility: hidden;
+    z-index: 110;
+
+    top: 410%;
+}
+
+.pricesTab {
+    color: white;
+    font-size: 14px;
+    font-family: Satoshi;
+    font-weight: 900;
+    
+    line-height: 40px;
+    letter-spacing: 2.24px;
+    word-wrap: break-word;
+    text-shadow: 6px 5px 9px rgba(30,96,145,0.57), 6px 5px 9px rgba(30,96,145,0.57);
+
+    left: 15%;
+    z-index: 110;
+    top: 430%;
+    position: absolute;
+    text-align: left;
+    width: 70%;
+    min-height: 10%;
+
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: -10px 0px 13px -7px #0f2e46, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+
+    background: linear-gradient(135deg, #168AAD 0%, rgba(30, 96, 145, 0.60) 70%, #1A759F 100%, rgba(153, 217, 140, 0) 84%);
+    
+    border-radius: 40px;
+    border: 5px #B5E48C solid;
+}
+
+span {
+    justify-content:center;
+    display: flex;
+    font-size: x-large;
+    font-style: oblique;
+    padding: 3%;
+    letter-spacing: 3px;
+}
+
+.rums {
+    display: flex;
+}
+
+.roomPricesBox {
+    width: 50%;
+    display: block;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: -10px 0px 13px -7px #0f2e46, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+
+    background: linear-gradient(-135deg, #34A0A4 0%, rgba(153, 217, 140, 0.08) 70%, #1A759F 100%, rgba(153, 217, 140, 0) 84%);
+    
+    border-radius: 0px 0px 40px 0px;
+    border: 5px #B5E48C solid;
+    align-items: left;
+}
+
+.pricesList {
+    
+    display: block;
+    list-style: none;
+    
+}
+
+.boxNombre {
+    justify-content:center;
+    display: flex;
+    border-bottom: 5px #B5E48C solid;
+    padding: 3%;
+    margin-top: 0%;
+}
+
+.roomPricesSpace {
+    width: 50%;
+    display: block;
+    -webkit-box-shadow: 10px 0px 13px -7px #000000, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 10px 0px 13px -7px #0f2e46, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+
+    background: linear-gradient(-135deg, #34A0A4 0%, rgba(153, 217, 140, 0.08) 70%, #1A759F 100%, rgba(153, 217, 140, 0) 84%);
+    
+    border-radius: 0px 0px 0px 40px;
+    border: 5px #B5E48C solid;
+    align-items: right;
+}
+
+.spaceNombre {
+    justify-content:center;
+    display: flex;
+    border-bottom: 5px #B5E48C solid;
+    padding: 3%;
+    margin-top: 0%;
+
+}
+
+hr {
+    border: 4px solid #76C893;
+    border-radius: 8px 0px 0px 3px;
+
+
+}
+
+.coworPrices {
+   display: flex;
+   text-align: center;
+}
+
+.vaniPrices {
+    width: 50%;
+    display: block;
+
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: -10px 0px 13px -7px #0f2e46, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+
+    background: linear-gradient(-135deg, #34A0A4 0%, rgba(153, 217, 140, 0.08) 70%, #1A759F 100%, rgba(153, 217, 140, 0) 84%);
+    
+    border: 5px #B5E48C solid;
+    
+    align-items: center;
+}
+
+.premPrices {
+
+    width: 50%;
+    display: block;
+    -webkit-box-shadow: 10px 0px 13px -7px #000000, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 10px 0px 13px -7px #0f2e46, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+
+    background: linear-gradient(-135deg, #34A0A4 0%, rgba(153, 217, 140, 0.08) 70%, #1A759F 100%, rgba(153, 217, 140, 0) 84%);
+    
+    border: 5px #B5E48C solid;
+    border-left: 0px;
+    align-items: center;
+}
+
+.vaniNombre {
+    
+    border-bottom: 5px #B5E48C solid;
+    font-style: oblique;
+    letter-spacing: 2px;
+    font-size: x-large;
+    padding: 5%;
+    margin-top: 0%;
+}
+
+.premNombre {
+    
+    border-bottom: 5px #B5E48C solid;
+    font-style: oblique;
+    letter-spacing: 2px;
+    font-size: x-large;
+    padding: 5%;
+    margin-top: 0%;
+}
+
+.tablaPrices{
+    width: 80%;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    -webkit-box-shadow: 10px 0px 13px -7px #000000, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 10px 0px 13px -7px #0f2e46, 13px 11px 15px 5px rgba(0, 0, 0, 0);
+
+    background: linear-gradient(-135deg, #34A0A4 0%, rgba(153, 217, 140, 0.08) 70%, #1A759F 100%, rgba(153, 217, 140, 0) 84%);
+    
+    border: 5px #B5E48C solid;
+
+    border-collapse: collapse;
+
+}
+
+th, td {
+    border-bottom: 5px #B5E48C solid;
+    padding: 2%;
+    color: white;
+  }
+
